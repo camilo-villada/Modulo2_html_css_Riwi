@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Juan Camilo Villada</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Portafolio</h1>
+
+    <nav aria-label="Menú principal">
+        <ul>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="https://github.com/camilo-villada/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="#mascota">Mascotas</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Soy desarrollador de software en Riwi, apasionado por crear soluciones tecnológicas que mejoren la experiencia del usuario y optimicen procesos.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+        <li>Python</li>
+        <li>C#</li>
+        <li>C++</li>
+        <li>Git</li>
+        <li>GitHub</li>
+        <li>Linux</li>
+    </ul>
+</section>
+
+<section class="proyectos">
+
+    <h2>Proyectos</h2>
+
+
+    <article>
+        <img src="assets/images.jfif" alt="imagen">
+        <a  href="https://github.com/camilo-villada/">Explora mis proyectos en GitHub</a>
+    </article>
+
+    <article>
+        <h3>Proyectos de python</h3>
+        <img class="imagenpy" src="assets/images (1).png" alt="imagen">
+        <a href="https://github.com/camilo-villada/Modulo1_python_riwi">Explora mis proyectos de python</a>
+    </article>
+
+</section>
+
+<section id="mascota">
+    <h2>Galeria de Mascotas</h2>
+    <div class="mascotass">
+        <img src="assets/218356523-grupo-de-diferentes-razas-de-perros-y-gatos-aislados-sobre-un-fondo-blanco.jpg" alt="imagen">
+        <a href="mascota.html">Explora mi galeria de mascotas</a>
+    </div>    
+</section>
+
+
+<section id="contacto">
+    <h2>Contacto</h2>
+
+    <form action="datos" method="post" class="form-contacto">
+
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+    <button type="submit" class="btn-enviar">Enviar</button>
+
+    </form>
+</section>
+
+
+</main>
+
+<footer>
+    <small>&copy; 2025 Juan Camilo Villada. Todos los derechos reservados.</small>
+</footer>
+
+</body>
+</html>

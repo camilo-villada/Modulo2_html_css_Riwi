@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 60px 70px;
+    padding: 0 5rem;
+}
+
+header nav{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover{
+    color: blue;
+}
+
+.linkheader{
+    border: 1px solid black;
+    border-radius: 14px;
+    padding: 10px;
+}
+
+.section1{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px 70px;
+    padding: 0 5rem;
+}
+
+.section1 h1{
+    width: 531px;
+    height: 231px;
+    font-size: 4rem;
+}
+
+.section1 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 35px;
+}
+
+.section1 p{
+    width: 498px;
+    height: 112px;
+    font-size: 22px;
+}
+
+.section1 button{
+    width: 264px;
+    height: 68px;
+    border-radius: 14px;
+    font-size: 20px;
+    background-color: #191A23;
+    color: white;
+}
+
+.section1 button:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.section2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+    margin: 0 60px 70px
+}
+
+.section2 img{
+    filter: grayscale(100%);
+}
+
+.section3{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 0 80px;
+    margin: 0 60px 70px;
+    
+}
+
+.section3 h2{
+    background-color: #B9FF66;
+    font-size: 3rem;
+}
+
+.section3 p{
+    width: 580px;
+    height: 46px;
+    font-size: 22px;
+}
+
+.section4{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    justify-items: center;
+}
+
+.section4 .articulo1{
+    background-color: #f3f3f3;
+    width: 600px;
+    height: 310px;
+    border-radius: 45px;
+}
+
+.section4 .articulo2{
+    background-color: #B9FF66;
+    width: 600px;
+    height: 310px;
+    border-radius: 45px;
+}
+
+.section4 .articulo3{
+    background-color: #191A23;
+    width: 600px;
+    height: 310px;
+    border-radius: 45px;
+}
+
+.section4 .articulo4{
+    background-color: #f3f3f3;
+    width: 600px;
+    height: 310px;
+    border-radius: 45px;
+}
+
+.section4 .articulo5{
+    background-color: #B9FF66;
+    width: 600px;
+    height: 310px;
+    border-radius: 45px;
+}
+
+.section4 .articulo6{
+    background-color: #191A23;
+    width: 600px;
+    height: 310px;
+    border-radius: 45px;
+}
+
+
+

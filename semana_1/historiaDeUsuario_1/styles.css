@@ -1,0 +1,232 @@
+/* =================== RESET =================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    line-height: 1.7;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* =================== HEADER =================== */
+header {
+    background-color: #ffffff;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* H1 con línea de gradiente debajo */
+header h1 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+/* Línea con gradiente */
+header h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px; /* grosor de la línea */
+    width: 100%;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b); /* gradiente */
+    transition: transform 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+/* Animación al pasar el cursor sobre el header h1 */
+header h1:hover::after {
+    transform: scaleX(1);
+}
+
+/* =================== NAV =================== */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+
+/* =================== MAIN =================== */
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Secciones con sombra y efecto hover */
+section {
+    background-color: #ffffff;
+    padding: 35px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+section h2 {
+    color: #202020;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    font-size: 1.6em;
+}
+
+/* =================== FOOTER =================== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #f4f4f4;
+    margin-top: 40px;
+}
+
+footer small {
+    font-size: 0.85em;
+}
+
+.skills-list {
+    list-style-type: disc; /* Puntos clásicos */
+    padding-left: 20px;    /* Espacio a la izquierda */
+    margin-top: 15px;
+}
+
+.skills-list li {
+    margin-bottom: 8px;    /* Espaciado entre cada skill */
+    font-weight: 500;      /* Un poco más destacado */
+    color: #2c3e50;
+    transition: color 0.3s;
+}
+
+.skills-list li:hover {
+    color: #007bff;        /* Cambia color al pasar el cursor */
+}
+
+.animales-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.animal{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.animal img{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.animal p{
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    flex: 1;
+}
+
+.form-contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-contacto label{
+    font-weight: 600;
+    color: #444;
+}
+
+.form-contacto input, .form-contacto textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cfd6df;
+    border-radius: 8px;
+    background: #f8fafc;
+    font-size: 1rem;
+    transition: border 0.3,  box-shadow 0.3s;
+}
+
+.form-contacto input:focus,
+.form-contacto textarea:focus {
+    border-color: #007bff;
+    background: #fff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+/* Botón */
+.btn-enviar {
+    padding: 12px;
+    background: linear-gradient(90deg, #007bff, #005bd1);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-enviar:hover {
+    background: linear-gradient(90deg, #005bd1, #003e9c);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =================== RESPONSIVE =================== */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 25px;
+    }
+}

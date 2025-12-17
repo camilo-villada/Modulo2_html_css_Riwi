@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.fondoheader{
+    background-color: hsl(356, 100%, 66%);
+    border-bottom-left-radius: 40px; /* curva inferior izquierda */ 
+    border-bottom-right-radius: 40px; /* curva inferior derecha */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    margin: 0 60px 70px;
+    padding: 40px 100px 0;
+    height: 20rem;
+}
+
+.imgnav{
+    display: flex;
+}
+
+.headerr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerr nav ul{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.Login{
+    display: flex;
+    gap: 10px;
+}
+
+
+.fondoheader a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.fondoheader section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
