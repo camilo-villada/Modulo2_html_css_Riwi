@@ -15,17 +15,33 @@
     <nav aria-label="Menú principal">
         <ul>
             <li><a href="#contacto">Contacto</a></li>
-            <li><a href="https://github.com/camilo-villada/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li>
+                <a href="https://github.com/camilo-villada/" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+            </li>
             <li><a href="#mascota">Mascotas</a></li>
         </ul>
     </nav>
 </header>
 
+<!-- MENSAJE DE BIENVENIDA (JS) -->
+<p id="mensaje-bienvenida" class="bienvenida"></p>
+
 <main>
 
-<section id="sobre-mi">
+<section id="sobre-mi" class="flex">
     <h2>Sobre mí</h2>
-    <p>Soy desarrollador de software en Riwi, apasionado por crear soluciones tecnológicas que mejoren la experiencia del usuario y optimicen procesos.</p>
+    
+    <p id="texto-sobre-mi">
+        Soy desarrollador de software en Riwi, apasionado por crear soluciones
+        tecnológicas que mejoren la experiencia del usuario y optimicen procesos.
+    </p>
+
+    <!-- BOTÓN CAMBIAR TEXTO -->
+    <button id="btn-cambiar-texto" class="btn-js">
+        Conocer más
+    </button>
 </section>
 
 <section id="skills">
@@ -41,57 +57,71 @@
 </section>
 
 <section class="proyectos">
-
     <h2>Proyectos</h2>
-
 
     <article>
         <img src="assets/images.jfif" alt="imagen">
-        <a  href="https://github.com/camilo-villada/">Explora mis proyectos en GitHub</a>
+        <a href="https://github.com/camilo-villada/">Explora mis proyectos en GitHub</a>
     </article>
 
     <article>
-        <h3>Proyectos de python</h3>
+        <h3>Proyectos de Python</h3>
         <img class="imagenpy" src="assets/images (1).png" alt="imagen">
-        <a href="https://github.com/camilo-villada/Modulo1_python_riwi">Explora mis proyectos de python</a>
+        <a href="https://github.com/camilo-villada/Modulo1_python_riwi">
+            Explora mis proyectos de Python
+        </a>
     </article>
 
+    <div class="boton_ocultar">
+    <!-- BOTÓN MOSTRAR / OCULTAR -->
+    <button id="btn-toggle" class="btn-js">
+        Ver más proyectos
+    </button>
+    </div>
+
+    <div id="contenido-extra" class="contenido-extra">
+        <p>
+            En mi GitHub encontrarás más proyectos personales,
+            y prácticas enfocadas en seguir mejorando como desarrollador.
+        </p>
+    </div>
 </section>
 
 <section id="mascota">
-    <h2>Galeria de Mascotas</h2>
+    <h2>Galería de Mascotas</h2>
     <div class="mascotass">
         <img src="assets/218356523-grupo-de-diferentes-razas-de-perros-y-gatos-aislados-sobre-un-fondo-blanco.jpg" alt="imagen">
-        <a href="mascota.html">Explora mi galeria de mascotas</a>
+        <a href="mascota.html">Explora mi galería de mascotas</a>
     </div>    
 </section>
-
 
 <section id="contacto">
     <h2>Contacto</h2>
 
     <form action="datos" method="post" class="form-contacto">
 
-    <label for="nombre">Nombre</label>
-    <input type="text" id="nombre" name="nombre" required>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
 
-    <label for="email">Correo electrónico:</label>
-    <input type="email" id="email" name="email" required>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
 
-    <label for="mensaje">Mensaje</label>
-    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-    <button type="submit" class="btn-enviar">Enviar</button>
+        <button type="submit" class="btn-enviar">Enviar</button>
 
     </form>
 </section>
-
 
 </main>
 
 <footer>
     <small>&copy; 2025 Juan Camilo Villada. Todos los derechos reservados.</small>
 </footer>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
